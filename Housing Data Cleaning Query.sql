@@ -188,7 +188,7 @@ from dbo.NashvilleHousing
 
 --USE PortfolioProject;
 --GO
---BULK INSERT nashvilleHousing FROM 'C:\Temp\SQL Server Management Studio\Nashville Housing Data for Data Cleaning Project.csv'
+--BULK INSERT nashvilleHousing FROM '<Nashville housing.csv full address>'
 --   WITH (
 --      FIELDTERMINATOR = ',',
 --      ROWTERMINATOR = '\n'
@@ -201,5 +201,5 @@ from dbo.NashvilleHousing
 --GO
 --SELECT * INTO nashvilleHousing
 --FROM OPENROWSET('Microsoft.ACE.OLEDB.12.0',
---    'Excel 12.0; Database=<file_name.csv>, [Sheet1$]);
+--    'Excel 12.0; Database=<file_name.csv full address>, [Sheet1$]);
 --GO
